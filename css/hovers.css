@@ -1,0 +1,351 @@
+/* base hovers to buttons */
+.base a {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    border: none;
+}
+/* part the hover & before & after to hovers the buttons*/
+.base a::before {
+    content: " ";
+    position: absolute;
+    background-color: var(--black-color);
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transition: all .5s;
+    z-index: -1;
+}
+.base a:hover::before {
+    z-index: -2;
+    width: 51%;
+    left: 0;
+}
+.base a::after {
+    content: " ";
+    position: absolute;
+    background-color: var(--black-color);
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 50%;
+    transition: all .5s;
+    z-index: -1;
+}
+.base a:hover::after {
+    z-index: -2;
+    width: 50%;
+    right: 0;
+}
+.base a:hover {
+    z-index: 999;
+}
+
+.ch-base2 a::before {
+    background-color: var(--main-color);
+}
+.ch-base2 a::after {
+    background-color: var(--main-color);
+}
+.ch-base2 a:hover {
+    color: var(--light-color);
+}
+
+/* hovers -> header */
+header .headTop .nav li a:hover {
+    color: var(--main-color);
+}
+header .headBottom .headCenter .nav .moving a::before {
+    content: " ";
+    position: absolute;
+    background-color: var(--main-color);
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    transition: all .5s;
+}
+header .headBottom .headCenter .nav .moving a:hover::before {
+    width: 80%;
+}
+header .headBottom .headCenter .nav .moving a:hover {
+    color: var(--main-color);
+}
+
+/* hovers -> section one */
+.section-one .cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px var(--main-color);
+}
+.section-one .cards .card .item .lnk::before {
+    content: " ";
+    position: absolute;
+    background-color: var(--backcolor2-color);
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    transition: all .4s;
+}
+.section-one .cards .card .item .lnk:hover::before {
+    width: 100%;
+}
+
+/* hovers -> section two */
+.section-two .cont .column:hover .icon {
+    background-color: var(--main-color);
+    border: none;
+}
+.section-two .cont .column:hover .icon i {
+    color: var(--light-color);
+}
+
+/* hovers -> section three */
+.section-three .container .row .cool:hover .icon {
+    background-color: var(--light-color);
+}
+.section-three .container .row .cool:hover .icon i {
+    color: var(--main-color);
+}
+
+/* hovers -> section five */
+/* btn1 */
+.five .section-five .cont-five .btns-five .now a::before {
+    content: " ";
+    position: absolute;
+    background-color: var(--main-color);
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transition: all .5s;
+    z-index: -1;
+}
+.five .section-five .cont-five .btns-five .now a:hover::before {
+    z-index: -2;
+    width: 50%;
+    left: 0;
+}
+.five .section-five .cont-five .btns-five .now a::after {
+    content: " ";
+    position: absolute;
+    background-color: var(--main-color);
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 50%;
+    transition: all .5s;
+    z-index: -1;
+}
+.five .section-five .cont-five .btns-five .now a:hover::after {
+    z-index: -2;
+    width: 50%;
+    right: 0;
+}
+.five .section-five .container .row .cont-five .btns-five .now a:hover {
+    z-index: 999;
+    color: #fff;
+    
+}
+/* btn2 */
+.five .section-five .container .row .cont-five .btns-five .arrow .ex2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background-color: var(--light-color);
+    transition: all .5s;
+    z-index: -1;
+}
+.five .section-five .container .row .cont-five .btns-five .arrow .ex2:hover::before {
+    width: 50%;
+    left: 0;
+    z-index: -2;
+}
+.five .section-five .container .row .cont-five .btns-five .arrow .ex2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 0;
+    height: 100%;
+    background-color: var(--light-color);
+    transition: all .5s;
+    z-index: -1;
+}
+.five .section-five .container .row .cont-five .btns-five .arrow .ex2:hover::after {
+    width: 50%;
+    right: 0;
+    z-index: -2;
+}
+.five .section-five .container .row .cont-five .btns-five .arrow .ex2:hover a, i {
+    color: var(--main-color);
+    z-index: 999;
+    border: none;
+}
+.five .section-five .container .row .cont-five .btns-five .arrow .ex2:hover i {
+    color: var(--main-color);
+}
+
+/* hovers -> section six */
+/* image */
+.six .section-six .cards-imgs .card-image .img::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--main-color);
+    opacity: .7;
+    z-index: -1;
+    transition: all .7s;
+}
+.six .section-six .cards-imgs .card-image .img:hover::before {
+    z-index: 1;
+}
+.six .section-six .cards-imgs .card-image .img:hover a {
+    opacity: 1;
+}
+/* btns */
+.six .section-six .cards-imgs .card-image .img a::before {
+    content: " ";
+    position: absolute;
+    background-color: var(--black-color);
+    border-radius: 5px 0 0 5px;
+    left: 50%;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transition: all .4s;
+    z-index: -1;
+}
+.six .section-six .cards-imgs .card-image .img a:hover::before {
+    width: 50%;
+    left: 0;
+    z-index: -2;
+}
+.six .section-six .cards-imgs .card-image .img a::after {
+    content: " ";
+    position: absolute;
+    background-color: var(--black-color);
+    border-radius: 0 5px 5px 0;
+    right: 50%;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transition: all .4s;
+    z-index: -1;
+}
+.six .section-six .cards-imgs .card-image .img a:hover::after {
+    width: 50%;
+    right: 0;
+    z-index: -2;
+}
+.six .section-six .cards-imgs .card-image .img a:hover {
+    color: var(--light-color);
+    z-index: 999;
+}
+/* hovers -> section seven */
+.seven .section-seven .services .cont-seven .service .txt-seven h3 a:hover {
+    color: var(--main-color);
+}
+
+/* hovers -> section nine */
+.nine .section-nine .cards .crd .item .txt-nine h4 a:hover {
+    color: var(--main-color);
+}
+.nine .section-nine .cards .crd::before {
+    content: " ";
+    position: absolute;
+    background-color: var(--main-color);
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    transition: all .5s;
+}
+.nine .section-nine .cards .crd:hover::before {
+    width: 100%;
+}
+
+/* hovers -> footer */
+footer .foot-top .col-foot .item .icons a:hover {
+    background-color: var(--light-color);
+}
+footer .foot-top .col-foot .item .icons a:hover i {
+    color: var(--main-color);
+}
+footer .foot-top .col-foot .item .list-foot li:hover {
+    transform: translateX(8px);
+}
+footer .foot-top .col-foot .item .form-foot input:hover::placeholder {
+    padding-left: 5px;
+}
+footer .foot-top .col-foot .item .form-foot a:hover i {
+    color: var(--black-color);
+}
+
+
+/* ----------- */
+/* ------- */
+/* pages */
+/* hovers -> section one */
+section .section-one form input:hover::placeholder {
+    padding-left: 5px;
+}
+section .section-one form .btn::before {
+    content:  "";
+    position: absolute;
+    background-color: var(--black-color);
+    border-radius: 5px 0 0 5px;
+    width: 0;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    z-index: -1;
+    transition: all .5s;
+}
+section .section-one form .btn:hover::before {
+    width: 50%;
+    left: 0;
+    z-index: 2;
+}
+section .section-one form .btn::after {
+    content:  "";
+    position: absolute;
+    background-color: var(--black-color);
+    border-radius: 0 5px 5px 0;
+    width: 0;
+    height: 100%;
+    right: 50%;
+    top: 0;
+    z-index: -1;
+    transition: all .5s;
+}
+section .section-one form .btn:hover::after {
+    width: 50%;
+    right: 0;
+    z-index: 1;
+}
+section .section-one form .btn:hover i {
+    z-index: 999;
+    color: var(--light-color);
+}
+
+
+/* ----------- */
+/* ------- */
+/* contact */
+/* hovers -> section one */
+.section-one .container .row .con .lst ul li a:hover {
+    color: var(--black-color);
+}
+
+/* hovers -> section three inside section two */
+.three .cards .col .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px var(--main-color);
+}

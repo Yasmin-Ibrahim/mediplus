@@ -1,0 +1,37 @@
+@import url(bootstrap.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+@import url(hovers.css);
+@import url(footer.css);
+@import url(responsive.css);
+:root {
+    --main-color: #1A76D1;
+    --black-color: #2C2D3F;
+    --gray-color: #868686;
+    --gray-dark-color: #757575;
+    --gray-light-color: #F6F6F6;
+    --background-color: #f9f9f9;
+    --light-color: #fff;
+    --eee-color: #eee;
+    --txt-color : #333;
+    --light-dark-color: #d9d7d7;
+    --backcolor2-color: #EDF2FF;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-transform: capitalize;
+    text-decoration: none;
+    display: inline-block;
+}
+ul {
+    list-style: none;
+}
+.img {
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6 {
+    text-transform: capitalize;
+}

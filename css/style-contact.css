@@ -1,0 +1,219 @@
+@import url(static.css);
+
+/* start the header css */
+.headTop {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--eee-color);
+}
+header .container .row ul a{
+    color: var(--black-color);
+    margin-right: 20px;
+    transition: all .4s;
+}
+header .container .row .headEnd li {
+    margin-right: 25px;
+}
+header .container .row .headEnd li i {
+    margin-right: 5px;
+    color: var(--main-color);
+    font-size: 14px;
+}
+.headBottom .headCenter ul li a{
+    color: var(--black-color);
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0 20px;
+    padding: 22px 0;
+}
+header .headBottom .headCenter .nav .moving {
+    position: relative;
+}
+.headBottom .headCenter ul li .main-color {
+    color: var(--main-color);
+}
+header .headBottom .headCenter .nav .fixed {
+    border-bottom: 3px solid var(--main-color);
+    padding-bottom: 3px;
+}
+.btn-blue a {
+    background-color: var(--main-color);
+    color: var(--light-color);
+    font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+/* end the header css */
+
+
+/* start section one css */
+.one {
+    padding-bottom: 70px;
+}
+.section-one {
+    background-image: url(imgCss/bread-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    position: relative;
+}
+.section-one .container .row {
+    color: var(--light-color);
+    position: relative;
+    z-index: 999;
+}
+.section-one .container .row .con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section-one .container .row .con h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.section-one .container .row .con .lst {
+    margin-left: -10px;
+}
+.section-one .container .row .con .lst ul li {
+    margin-right: 15px;
+}
+.section-one .container .row .con .lst ul li a, i {
+    color: var(--light-color);
+    transition: all .4s;
+}
+.section-one .container .row .con .lst ul li i {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* part the before & after */
+.section-one::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--main-color);
+    opacity: .8;
+}
+/* end section one css */
+
+
+/* start section two css */
+.section-two {
+    padding: 50px 0 ;
+}
+.section-two .txt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0px 0px 10px #00000014;
+}
+.section-two .txt .img {
+    padding: 0 15px 0 0;
+}
+.section-two .txt .cont {
+    padding: 0 10px 0 20px;
+}
+.section-two .txt .cont .cont-info {
+    padding: 50px 10px 45px 20px;
+    font-size: 14px;
+    color: var(--txt-color);
+}
+.section-two .txt .cont .cont-info h2 {
+    margin: 0 0 15px;
+    padding: 0 0 20px;
+    font-size: 33px;
+    font-weight: 700;
+    position: relative;
+}
+.section-two .txt .cont .cont-info p {
+    margin-bottom: 50px;
+}
+.section-two .txt .cont .cont-info .form-sec2 form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-two .txt .cont .cont-info .form-sec2 form input, textarea {
+    color: var(--gray-dark-color);
+    border: 1px solid var(--light-dark-color);
+    padding: 10px 15px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+}   
+.section-two .txt .cont .cont-info .form-sec2 form .area {
+    width: 100%;
+    padding-right: 7px;
+    margin-bottom: 25px;
+}
+.section-two .txt .cont .cont-info .form-sec2 form .put {
+    padding: 0 20px 0 0;
+    margin-bottom: 25px;
+}
+.section-two .txt .cont .cont-info .form-sec2 form .snd a {
+    background-color: var(--main-color);
+    color: var(--light-color);
+    width: 100%;
+    text-align: center;
+    padding: 13px 0;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+/* part the before & after */
+.section-two .txt .cont .cont-info h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 55px;
+    height: 2px;
+    width: 53px;
+    background-color: var(--main-color);
+}
+/* end section two css */
+
+/* start section three css */
+.three {
+    padding: 50px 0;
+}
+.three .cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.three .cards .col {
+    padding: 0 20px;
+}
+.three .cards .col .card {
+    background-color: var(--main-color);
+    width: 100%;
+    padding: 40px 43px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: none;
+    border-radius: 10px;
+    transition: all .4s ;
+}
+.three .cards .col .card .icon i {
+    color: var(--light-color);
+    font-size: 35px;
+}
+.three .cards .col .card .txt-card {
+    padding: 0 20px;
+    margin-left: 10px;
+    color: var(--light-color);
+}
+.three .cards .col .card .txt-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+/* end section three css */
+

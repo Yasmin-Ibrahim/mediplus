@@ -1,0 +1,795 @@
+@import url(static.css);
+
+/* base-head is found in some sections */
+.base-head {
+    text-align: center;
+    color: var(--black-color);
+    line-height: 1.6;
+    width: 50%;
+    padding: 15px 0;
+}
+.base-head h2 {
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.base-head p {
+    margin-top: 15px;
+    font-weight: 400;
+    color: var(--gray-color);
+}
+
+
+/* start the header css */
+.headTop {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--eee-color);
+}
+header .container .row ul a{
+    color: var(--black-color);
+    margin-right: 20px;
+    transition: all .4s;
+}
+header .container .row .headEnd li {
+    margin-right: 25px;
+}
+header .container .row .headEnd li i {
+    margin-right: 5px;
+    color: var(--main-color);
+    font-size: 14px;
+}
+.headBottom .headCenter ul li a{
+    color: var(--black-color);
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0 20px;
+    padding: 22px 0;
+}
+header .headBottom .headCenter .nav .moving {
+    position: relative;
+}
+.headBottom .headCenter ul li .main-color {
+    color: var(--main-color);
+}
+header .headBottom .headCenter .nav .fixed {
+    border-bottom: 3px solid var(--main-color);
+    padding-bottom: 3px;
+}
+.btn-blue a {
+    background-color: var(--main-color);
+    color: var(--light-color);
+    font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+/* end the header css */
+
+
+/* start section one css */
+.one {
+    height: 830px;
+
+}
+.section-one {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    position: relative;
+}
+.section-one .txt {
+    margin-top: 90px;
+}
+.section-one .txt h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--black-color);
+}
+.section-one .txt h1 span {
+    color: var(--main-color);
+}
+.section-one .txt .buttons a {
+    margin : 8px 0 0 ;
+    font-weight: 500;
+}
+.section-one .txt .buttons .get {
+    color: var(--light-color);
+    background-color: var(--main-color);
+    border-radius: 5px;
+    padding: 13px 23px;
+    margin-right: 10px;
+}
+.section-one .txt .buttons .learn {
+    color: var(--light-color);
+    background-color: var(--black-color);
+    border-radius: 5px;
+    padding: 12px 23px;
+}
+.section-one .cards {
+    position: absolute;
+    bottom: -130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+.section-one .cards .card {
+    display: inline-block;
+    background-color: var(--main-color);
+    margin: 0 12px;
+    color: var(--light-color);
+    width: 19%;
+    border: none;
+    transition: all .5s;
+}
+.section-one .cards .card .item {
+    padding: 25px 15px 20px;
+    position: relative;
+}
+.section-one .cards .card .item .icon {
+font-size: 90px;
+opacity: .2;
+position: absolute;
+bottom: -50px;
+right: -20px;
+}
+.section-one .cards .card .item span {
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.section-one .cards .card .item h4 {
+    font-size: 23px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.section-one .cards .card .item p {
+    line-height: 1.6;
+    margin-top: 20px;
+}
+.section-one .cards .card .item .lnk {
+    position: relative;
+    display: inline;
+}
+.section-one .cards .card .item .lnk a {
+    color: var(--light-color);
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+.section-one .cards .card .item .lnk i {
+    color: var(--light-color);
+    margin-left: 5px;
+    font-size: 14px;
+}
+.section-one .cards .card .item .days {
+    position: absolute;
+    left: 0;
+}
+/* end section one css */
+
+
+/* start section two css */
+.section-two {
+    padding-bottom: 60px;
+}
+.section-two .cont {
+    padding-top: 20px;
+}
+.section-two .cont .column {
+    text-align: center;
+    color: var(--black-color);
+    padding: 20px 30px;
+    position: relative;
+    transition: all .5s;
+}
+.section-two .cont .column .icon {
+    border: 1px solid var(--light-dark-color);
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    transition: all .5s;
+}
+.section-two .cont .column .icon i {
+    color: var(--main-color);
+    font-size: 35px;
+    transition: all .5s;
+}
+.section-two .cont .column h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 23px;
+    margin-top: 30px;
+}
+.section-two .cont .column p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: var(--gray-color);
+}
+
+/* part the before & after */
+.section-two .cont .dot::before {
+    content: " ";
+    position: absolute;
+    border-bottom: 3px dotted var(--main-color);
+    top: 80px;
+    right: -60px;
+    width: 130px;
+    z-index: -1;
+}
+/* end section two css */
+
+
+/* start section three css */
+.three {
+    padding-bottom: 70px;
+}
+.section-three {
+    background-image: url(imgCss/bread-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    position: relative;
+}
+.section-three .container .row .cool {
+    z-index: 999;
+    color: var(--light-color);
+    position: relative;
+    transition: all .5s;
+}
+.section-three .container .row .cool .txt-three {
+    position: absolute;
+    left: 100px;
+    top: -1px;
+}
+.section-three .container .row .cool .icon {
+    width: 70px;
+    height: 70px;
+    border:  2px solid var(--light-color);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    transition: all .5s;
+}
+.section-three .container .row .cool i {
+    font-size: 25px;
+    color: var(--light-color);
+    transition: all .5s;
+}
+.section-three .container .row .cool span {
+    font-size: 30px;
+    font-weight: 700;
+}
+.section-three .container .row .cool p {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* part the before & after */
+.section-three::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--main-color);
+    opacity: .8;
+}
+/* end section three css */
+
+
+/* start section four css */
+.four {
+    padding: 30px 0;
+}
+.section-four .container .row .cont-four .content-container {
+    display: flex;
+    justify-content: space-between;
+}
+.section-four .cont-four .txt-four {
+    color: var(--black-color);
+}
+.section-four .cont-four .txt-four h3 {
+    margin-bottom: 45px;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+}
+.section-four .cont-four .txt-four p {
+    margin-bottom: 30px;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--gray-dark-color);
+}
+.section-four .cont-four .txt-four .list-four ul {
+    flex: 1; /* Ensure lists take equal space */
+    padding: 0;
+}
+.section-four .cont-four .txt-four .list-four ul li {
+    margin-bottom: 15px;
+    color: var(--gray-dark-color);
+}
+.section-four .cont-four .txt-four .list-four ul li i {
+    margin-right: 8px;
+    color: var(--light-color);
+    background-color: var(--main-color);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+}
+.section-four .cont-four .txt-four .list-four ul li span {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: .9;
+}
+.section-four .cont-four .img-four img {
+    max-width: 600px;
+    height: 380px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* part the before & after */
+.section-four .cont-four .txt-four h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50px;
+    height: 2px;
+    width: 53px;
+    background-color: var(--main-color);
+}
+/* end section four css */
+
+
+/* start section five css */
+.five {
+    padding: 50px 0;
+}
+.section-five {
+    background-image: url(imgCss/call-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+}
+.five .section-five .container .row {
+    padding: 20px 40px;
+    margin: 0 20px;
+}
+.five .section-five .container .row .cont-five {
+    margin: 0 60px;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 999;
+    color: var(--light-color);
+    text-align: center;
+}
+.five .section-five .container .row .cont-five h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.five .section-five .container .row .cont-five .para {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 1.4;
+}
+.five .section-five .container .row .cont-five .btns-five .now a {
+    color: var(--main-color);
+    background-color: var(--light-color);
+    border: 1px solid var(--light-color);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 13px 25px;
+    border-radius: 5px;
+    margin: 0 10px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    transition: all .5s;
+}
+.five .section-five .container .row .cont-five .btns-five {
+    margin-top: 25px;
+}
+.five .section-five .container .row .cont-five .btns-five .arrow .ex2 {
+    border: 1px solid var(--light-color);
+    margin: 0 10px;
+    padding: 11px 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.five .section-five .container .row .cont-five .btns-five .arrow a {
+    color: var(--light-color);
+    background-color: transparent;
+    transition: all .5s;
+}
+.five .section-five .container .row .cont-five .btns-five .arrow i {
+    font-size: 13px;
+    margin-left: 8px;
+    margin-top: 5px;
+    color: var(--light-color);
+    transition: all .5s;
+}
+
+
+/* part the before & after */
+.section-five::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--main-color);
+    opacity: .8;
+}
+/* end section five css */
+
+
+/* start section six css */
+.six {
+    padding-bottom: 60px;
+    padding-top: 40px;
+}
+.six .section-six .cards-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 5px;
+    margin: 20px 0;
+}
+.six .section-six .cards-imgs .card-image {
+    padding: 0 8px;
+    position: relative;
+    display: flex;
+}
+.six .section-six .cards-imgs .card-image img {
+    width: 100%;
+}
+.six .section-six .cards-imgs .card-image .img {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+.six .section-six .cards-imgs .card-image .img a {
+    position: absolute;
+    background-color: var(--light-color);
+    padding: 13px 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0;
+    transition: all .4s;
+    z-index: 2;
+}
+/* end section six css */
+
+
+/* start section seven css */
+.seven {
+    padding: 30px 0;
+}
+.seven .section-seven .services {
+    padding: 40px;
+    margin: 0 10px;
+}
+.seven .section-seven .services .cont-seven .service {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 50px 20px 10px;
+    margin-bottom: 15px;
+}
+.seven .section-seven .services .cont-seven .service .icon i {
+    font-size: 45px;
+    color: var(--main-color);
+    margin-right: 20px;
+}
+.seven .section-seven .services .cont-seven .service .txt-seven h3 a {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black-color);
+    transition: all .5s;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.seven .section-seven .services .cont-seven .service .txt-seven p {
+    color: var(--gray-color);
+    line-height: 1.5;
+    margin-left: 10px;
+}
+/* end section seven css */
+
+
+/* start section eight css */
+.eight {
+    padding-bottom: 50px;
+}
+.eight .section-eight {
+    background-color: var(--background-color);
+    padding: 80px 0 100px;
+}
+.eight .section-eight .cont-eight {
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+}
+.eight .section-eight .cont-eight .col {
+    padding: 0 13px;
+}
+.eight .section-eight .cont-eight .col .crd {
+    background-color: var(--light-color);
+    padding: 40px 40px 40px 10px;
+    border: 1px solid var(--light-dark-color);
+}
+.eight .section-eight .cont-eight .col .crd .title-crd {
+    text-align: center;
+}
+.eight .section-eight .cont-eight .col .crd .title-crd .icon i {
+    color: var(--main-color);
+    font-size: 60px;
+}
+.eight .section-eight .cont-eight .col .crd .title-crd .tit h4 {
+    font-size: 23px;
+    color: var(--black-color);
+    margin: 30px 0 5px;
+}
+.eight .section-eight .cont-eight .col .crd .title-crd .tit .txt-tit p {
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: -5px;
+}
+.eight .section-eight .cont-eight .col .crd .title-crd .tit .txt-tit span {
+    margin: 15px 0 0 7px;
+    color: var(--gray-color);
+}
+.eight .section-eight .cont-eight .col .crd .list-crd ul .space {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+.eight .section-eight .cont-eight .col .crd .list-crd ul .space i {
+    margin-right: 10px;
+    padding: 0 2px 0;
+}
+.eight .section-eight .cont-eight .col .crd .list-crd ul li {
+    margin-bottom: 18px;
+    color: var(--gray-dark-color);
+}
+.eight .section-eight .cont-eight .col .crd .list-crd ul .blue i {
+    color: var(--main-color);
+}
+.eight .section-eight .cont-eight .col .crd .list-crd ul .gray i {
+    color: var(--gray-color);
+}
+.eight .section-eight .cont-eight .col .crd .book {
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+.eight .section-eight .cont-eight .col .crd .book a {
+    background-color: var(--main-color);
+    color: var(--light-color);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 13px 120px;
+    border-radius: 5px;
+    text-align: center;
+    white-space: nowrap; /*stop words from wraping on each other */
+}
+/* end section eight css */
+
+
+/* start section nine css */
+.nine {
+    padding: 50px 0;
+}
+.nine .section-nine .cards {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.nine .section-nine .cards .slide {
+    padding: 10px 15px;
+}
+.nine .section-nine .cards .crd {
+    box-shadow: 0px 0px 10px #00000014;
+    position: relative;
+}
+.nine .section-nine .cards .crd .item .img img {
+    width: 100%;
+    height: 280px;
+}
+.nine .section-nine .cards .crd .item .txt-nine {
+    padding: 40px 28px 20px ;
+}
+.nine .section-nine .cards .crd .item .txt-nine .date {
+    color: var(--light-color);
+    background-color: var(--main-color);
+    display: inline;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-family: 600;
+}
+.nine .section-nine .cards .crd .item .txt-nine h4 a {
+    color: var(--black-color);
+    font-size: 20px;
+    margin-top: 17px;
+    margin-bottom: 5px;
+    transition: all .5s;
+}
+.nine .section-nine .cards .crd .item .txt-nine .para-nine {
+    color: var(--gray-color);
+    font-size: 15px;
+    line-height: 1.6;
+}
+/* end section nine css */
+
+
+/* start section ten css */
+.ten {
+    padding: 20px 0 80px;
+}
+.section-ten {
+    background-image: url(imgCss/client-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 270px;
+    padding: 100px 0;
+    position: relative;
+}
+.section-ten .container .imgs-ten {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 10px;
+}
+.section-ten .container .imgs-ten .img {
+    z-index: 999;
+    position: relative;
+}
+.section-ten .container .imgs-ten .img img {
+    width: 150px;
+    height: 50px;
+}
+/* part the before & after */
+.section-ten::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--main-color);
+    opacity: .8;
+}
+/* end section ten css */
+
+
+/* start section eleven css */
+.section-eleven .txt-eleven {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-left: 12%;
+}
+.section-eleven .txt-eleven .form-elvn form {
+    padding: 10px;
+}
+.section-eleven .txt-eleven .form-elvn .form-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.section-eleven .txt-eleven .form-elvn .form-info .form-col input, select {
+    border: 1px solid var(--light-dark-color);
+    border-radius: 5px;
+    padding: 13px 15px;
+    font-size: 15px;
+    color: var(--gray-dark-color);
+    width: 100%;
+    margin-bottom: 15px;
+}
+.section-eleven .txt-eleven .form-elvn .area-text textarea{
+    width: 100%;
+    border: 1px solid var(--light-dark-color);
+    border-radius: 5px;
+    padding: 20px 0 0 18px;
+    font-size: 15px;
+}
+.section-eleven .txt-eleven .form-elvn .bok a {
+    color: var(--light-color);
+    background-color: var(--main-color);
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 13px 20px;
+}
+.section-eleven .txt-eleven .form-elvn .bok p {
+    color: var(--gray-dark-color);
+}
+.section-eleven .txt-eleven .form-elvn .image .img {
+    padding: 10px;
+}
+/* end section eleven css */
+
+
+/* start section twelev css */
+.twelev .section-twelev {
+    background-color: var(--backcolor2-color);
+    margin-top: -8px;
+}
+.twelev .section-twelev .container .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.twelev .section-twelev .col1, .col2, .col3 {
+    padding: 70px 45px;
+}
+.twelev .section-twelev .col1 h4 {
+    color: var(--black-color);
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.twelev .section-twelev .col1 p {
+    color: var(--gray-dark-color);
+    font-size: 15px;
+    font-weight: 400;
+}
+.twelev .section-twelev .col2 {
+    padding-right: 10px;
+}
+.twelev .section-twelev .col2 input {
+    color: var(--gray-dark-color);
+    border: none;
+    border-radius: 5px;
+    padding: 20px 0 20px 20px;
+    width: 100%;
+}
+.twelev .section-twelev .col3 {
+    margin-left: -40px;
+}
+.twelev .section-twelev .col3 a {
+    color: var(--light-color);
+    background-color: var(--main-color);
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 20px 65px;
+}
+/* ens section twelev css */
